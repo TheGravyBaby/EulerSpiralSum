@@ -12,7 +12,6 @@ namespace EulerSpiralSum
             Console.WriteLine("What odd n x n matrix do you want us to print? Please enter an odd integer n:");
             string input = Console.ReadLine();
             CheckInput(input);
-
         }
 
         static void CheckInput(string matrixSizeString)
@@ -106,6 +105,7 @@ namespace EulerSpiralSum
                 //Console.WriteLine("");
                 hopsDone += 1;
             }
+
             printMatrix(array, n);
             calculateDiagonals(array, n);
         }
